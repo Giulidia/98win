@@ -98,8 +98,16 @@
     font-style: normal;
   }
   
-  body {
-    font-family: Arial;
+  @font-face {
+    font-family: 'Levi Adobe Dia Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Levi Adobe Dia Regular'), url('Adobe Dia.woff') format('woff');
+    }
+
+
+  /* Do not use */body {
+    font - family: Aril;
     font-size: 12px;
     color: var(--text-color);
   }
@@ -116,7 +124,7 @@
   .window,
   .title-bar,
   li[role=tab] {
-    font-family: "Pixelated MS Sans Serif", Arial;
+    font-family: "Pixelated MS Sans Serif";
     -webkit-font-smoothing: none;
     font-size: 11px;
   }
